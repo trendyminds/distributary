@@ -2,6 +2,7 @@
     "name": "trendyminds/distributary",
     "description": "Import a Google Docs HTML archive and let AI map it into Statamic page blocks.",
     "version": "1.0.0",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Trendyminds\\Distributary\\": "src"

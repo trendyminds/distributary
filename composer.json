@@ -1,0 +1,38 @@
+{
+    "name": "trendyminds/distributary",
+    "autoload": {
+        "psr-4": {
+            "Trendyminds\\Distributary\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Trendyminds\\Distributary\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "statamic/cms": "^6.0",
+        "laravel/ai": "^0.6"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Distributary",
+            "description": "Import a Google Docs HTML archive and let AI map it into Statamic page blocks."
+        },
+        "laravel": {
+            "providers": [
+                "Trendyminds\\Distributary\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
